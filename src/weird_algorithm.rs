@@ -16,7 +16,7 @@
 // 1 <= n <= 10^6
 //
 
-fn weird_algo(start: usize) -> Vec<usize> {
+pub fn _weird_algo(start: usize) -> Vec<usize> {
   let mut curr_num = start;
   let mut weird_coll: Vec<usize> = Vec::new();
   loop {
@@ -42,7 +42,7 @@ mod tests {
   #[test]
   fn check_for_3() {
     let input = 3;
-    let solution = weird_algo(input);
+    let solution = _weird_algo(input);
 
     assert_eq!(solution.len(), 8);
     assert_eq!(solution, vec![3,10,5,16,8,4,2,1]);
